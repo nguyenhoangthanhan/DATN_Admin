@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/colorGrayeee"
+    android:orientation="vertical">
+
+    <EditText
+        android:textStyle="bold"
+        android:textColor="@color/colorGray222"
+        android:id="@+id/edtPromotionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tiêu đề..." />
+
+    <EditText
+        android:textColor="@color/colorGray444"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:id="@+id/edtPromotionContent"
+        android:hint="Nhập nội dung..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/btnAcceptEditNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_marginStart="@dimen/_15sdp"
+            android:id="@+id/btnBackEditNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+</LinearLayout>

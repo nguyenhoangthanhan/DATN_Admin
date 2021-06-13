@@ -22,6 +22,8 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.andeptrai.doantn_admin_restaurant.URL.urlCheckInfoLoginAdmin;
+
 public class LoginActivity extends AppCompatActivity {
 
     EditText edtUsername, edtpassword;
@@ -74,7 +76,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void ReadJSON(final String username, final String password){
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        StringRequest stringRequest = new StringRequest(com.android.volley.Request.Method.POST, urlCheckInfoLoginRestaurant
+        StringRequest stringRequest = new StringRequest(com.android.volley.Request.Method.POST, urlCheckInfoLoginAdmin
                 , new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -82,15 +84,17 @@ public class LoginActivity extends AppCompatActivity {
 
                     try {
                         JSONObject jObject = new JSONObject(response);
-                        InfoRestaurantCurr.currentId = jObject.getString("Id_restaurant");
-                        InfoRestaurantCurr.currentName = jObject.getString("Name_restaurant");
-                        InfoRestaurantCurr.currentPhone = jObject.getString("Phone_restaurant");
-                        InfoRestaurantCurr.currentPwd = jObject.getString("Password");
-                        InfoRestaurantCurr.currentAddress = jObject.getString("Address_restaurant");
-                        InfoRestaurantCurr.currentRPoint = jObject.getString("Review_point");
-                        InfoRestaurantCurr.currentStatus = jObject.getInt("Status_restaurant");
+                        InfoAdminCurr.currentId = jObject.getInt("Id_customer");
+                        InfoAdminCurr.currentUsername = jObject.getString("Username");
+                        InfoAdminCurr.currentPhone = jObject.getString("Phone");
+                        InfoAdminCurr.currentPwd = jObject.getString("Password");
+                        InfoAdminCurr.currentEmail = jObject.getString("Email");
+                        InfoAdminCurr.currentName = jObject.getString("Name");
+                        InfoAdminCurr.currentAddress = jObject.getString("Address");
+                        InfoAdminCurr.list_care_res = jObject.getString("List_care_res");
+                        InfoAdminCurr.checkAdmin = jObject.getInt("Check_admin");
 
-//                        Toast.makeText(LoginActivity.this, "Login thành công", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Login thành công", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                         startActivity(intent);
                     } catch (JSONException e) {
@@ -113,8 +117,8 @@ public class LoginActivity extends AppCompatActivity {
             protected Map<String, String> getParams() throws AuthFailureError {
 
                 Map<String, String> params = new HashMap<>();
-                params.put("idRestaurant", username);
-                params.put("passwordRestaurant", password);
+                params.put("usernameAdmin", username);
+                params.put("passwordAdmin", password);
 
                 return params;
             }

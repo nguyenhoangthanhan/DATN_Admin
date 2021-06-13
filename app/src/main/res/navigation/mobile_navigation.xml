@@ -3,23 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_introduce">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.andeptrai.doantn_admin_restaurant.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_introduce"
+        android:name="com.andeptrai.doantn_admin_restaurant.ui.introduce.IntroduceFragment"
+        android:label="@string/menu_introduce"
+        tools:layout="@layout/fragment_introduce" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.andeptrai.doantn_admin_restaurant.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_user_manager"
+        android:name="com.andeptrai.doantn_admin_restaurant.ui.user_manager.UserManagerFragment"
+        android:label="@string/menu_manager"
+        tools:layout="@layout/fragment_user_manager" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.andeptrai.doantn_admin_restaurant.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_list_restaurant"
+        android:name="com.andeptrai.doantn_admin_restaurant.ui.list_restaurant.ListRestaurantFragment"
+        android:label="@string/menu_list_restaurant"
+        tools:layout="@layout/fragment_list_restaurant" />
+
+    <fragment
+        android:id="@+id/nav_notify"
+        android:name="com.andeptrai.doantn_admin_restaurant.ui.notify.NotifyFragment"
+        android:label="@string/menu_notify"
+        tools:layout="@layout/fragment_notify" />
 </navigation>

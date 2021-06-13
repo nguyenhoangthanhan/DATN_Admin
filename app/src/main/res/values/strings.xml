@@ -5,16 +5,30 @@
     <string name="status_bill">Trạng thái đơn hàng:</string>
     <string name="write_new_cmt">Viết bình luận</string>
     <string name="private_info">Thông tin cá nhân</string>
+    <string name="info_restaurant">Thông tin nhà hàng</string>
+    <string name="change_private_info">Đổi thông tin cá nhân</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
+    <string name="prompt_email_2">Email:</string>
     <string name="sdt">Số điện thoại</string>
     <string name="username">Tên đăng nhập</string>
+    <string name="username2">Tên đăng nhập:</string>
+    <string name="name_res">Tên nhà hàng:</string>
     <string name="prompt_password">Password</string>
     <string name="full_name">Họ và tên</string>
+    <string name="full_name2">Họ và tên:</string>
     <string name="matkhau">Mật khẩu</string>
     <string name="rePassword">Nhập lại mật khẩu</string>
     <string name="address">Địa chỉ</string>
+    <string name="add">Thêm</string>
+    <string name="accept_admin">Cho phép quyền Admin</string>
+    <string name="address_2">Địa chỉ:</string>
+    <string name="review_point">Diểm đánh giá:</string>
     <string name="address_delivery">Địa chỉ giao hàng:</string>
+    <string name="service">Dịch vụ:</string>
+    <string name="service_res1">Đặt chỗ</string>
+    <string name="service_res2">Giao hàng</string>
+    <string name="service_res3">Đặt chỗ, Giao hàng</string>
     <string name="error">Lỗi</string>
     <string name="action_login">Login</string>
     <string name="action_register">Register</string>
@@ -22,13 +36,19 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
     <string name="password">"Mật khẩu"</string>
+    <string name="password2">Mật khẩu:</string>
     <string name="change">"Thay đổi"</string>
+    <string name="update">"Cập nhật"</string>
     <string name="change_status_confirm">"Thay đổi trạng thái đơn hàng"</string>
+    <string name="change_service">"Thay đổi dịch vụ"</string>
     <string name="change_password">"Đổi mật khẩu"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="edit">"Chỉnh sửa"</string>
+    <string name="edit_private_info">Đổi thông tin cá nhân</string>
+    <string name="edit_info">Đổi thông tin</string>
+    <string name="edit_pass">Đổi mật khẩu</string>
     <string name="HaNoi">"Hà Nội"</string>
     <string name="View_Near">"Xem gần đây</string>
     <string name="near_you">"Gần tôi</string>
@@ -52,6 +72,8 @@
     <string name="reject_bill">Từ chối hóa đơn</string>
     <string name="content_accept_bill">Bạn xác định sẽ chấp nhận đơn hàng này?</string>
     <string name="content_reject_bill">Bạn xác định sẽ từ chối đơn hàng này?</string>
+    <string name="content_accept_admin">Bạn xác định sẽ cho phép người này thực hiện quyền admin?</string>
+    <string name="content_reject_admin">Bạn xác định sẽ thu hồi quyền admin của người này?</string>
     <string name="accept">Xác nhận</string>
     <string name="reject">Từ chối</string>
     <string name="accepted">Đã xác nhận</string>
@@ -61,9 +83,13 @@
     <string name="time_create_bill">Thời gian tạo đơn hàng:</string>
     <string name="name_user_order">Tên người đặt hàng:</string>
     <string name="time_delivery_come">Thời gian giao đến:</string>
+    <string name="name_restaurant">Tên nhà hàng:</string>
+    <string name="id_res">Mã nhà hàng:</string>
     <string name="ok">Ok</string>
     <string name="cancel">Hủy bỏ</string>
     <string name="list_bill">Danh sách hóa đơn</string>
+    <string name="phone">SĐT</string>
+    <string name="phone2">SĐT:</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -77,13 +103,19 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="email_me">skyannguyenhoangthanh@gmail.com</string>
+    <string name="info_app">App mạng xã hội và ứng dụng đặt chỗ nhà hàng</string>
     <string name="cmt">Danh sách bình luận</string>
     <string name="food">Danh sách món ăn</string>
+    <string name="menu_introduce">Introduce</string>
+    <string name="menu_manager">User manager</string>
     <string name="menu_home">Home</string>>
     <string name="menu_notify">Notify</string>
+    <string name="menu_galley">Galley</string>
     <string name="menu_bill_delivery">Đơn giao hàng</string>
     <string name="menu_bill_reservation">Đơn đặt chỗ</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_list_restaurant">Danh sách nhà hàng</string>
 
     <string name="res_manager">Restaurant manager</string>
 
@@ -95,4 +127,10 @@
 
     //fragment bill delivery
     <string name="add_new_bill_delivery">Thêm đơn giao hàng</string>
+
+    //fragment user manager
+    <string name="add_new_user">Thêm người dùng</string>
+
+    //fragment list restaurant
+    <string name="add_new_restaurant">Thêm nhà hàng mới</string>
 </resources>

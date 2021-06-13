@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/_15sdp"
+    android:background="@color/orange001"
+    tools:context=".ui.user_manager.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="113dp"
+            android:layout_height="103dp"
+            android:src="@drawable/restaurant1" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_below="@id/imgTitle"
+            android:orientation="vertical"
+            android:id="@+id/formLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:textColor="@color/black"
+                android:background="@drawable/edt_sign"
+                android:id="@+id/edtUsernameSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:padding="@dimen/_8sdp"
+                android:hint="@string/username"
+                android:selectAllOnFocus="true"/>
+
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/edtPasswordSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/edt_sign"
+                android:hint="@string/matkhau"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/edtRePasswordSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/edt_sign"
+                android:hint="@string/rePassword"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/edtPhoneSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/edt_sign"
+                android:hint="@string/sdt"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/edtNameSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/edt_sign"
+                android:hint="@string/full_name"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/edtEmailSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/edt_sign"
+                android:hint="@string/prompt_email"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/edtAddressSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/edt_sign"
+                android:hint="@string/address"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:selectAllOnFocus="true" />
+
+            <TextView
+                android:id="@+id/txtShowError"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:textSize="13sp"
+                android:visibility="invisible"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/red_Google"
+                android:text="@string/error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@id/formLogin"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnSignUp"
+            android:background="@drawable/btn_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_sign_up"/>
+
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_below="@id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="64dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

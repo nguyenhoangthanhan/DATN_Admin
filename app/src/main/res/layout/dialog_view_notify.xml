@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/colorGrayeee"
+    android:orientation="vertical">
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/colorGray222"
+        android:id="@+id/txtPromotionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Khuyến mãi hot mùa dịch Covi 19" />
+
+    <TextView
+        android:textColor="@color/colorGray444"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:id="@+id/txtPromotionContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giảm 15% các mặt hàng điện tử, giảm 5% sản phẩm
+        camera probest 7.4XT, tặng tai nghe khi mua điện thoại Samsung galaxy S9" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+
+        <Button
+            android:id="@+id/btnBackNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+</LinearLayout>
